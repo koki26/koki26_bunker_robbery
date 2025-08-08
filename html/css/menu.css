@@ -1,0 +1,97 @@
+/* menu.css */
+.bunker-menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(20, 20, 30, 0.98);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    width: 350px;
+}
+
+.bunker-menu .header {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bunker-menu .menu-item {
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bunker-menu .menu-item:hover {
+    background: rgba(52, 152, 219, 0.15);
+    cursor: pointer;
+}
+
+.bunker-menu .menu-item.selected {
+    background: rgba(46, 204, 113, 0.2);
+    border-left: 3px solid #2ecc71;
+}
+
+.bunker-menu .menu-item .icon {
+    margin-right: 12px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+    color: #3498db;
+}
+
+.bunker-menu .menu-item.selected .icon {
+    color: #2ecc71;
+}
+
+.bunker-menu .menu-item .label {
+    flex-grow: 1;
+    color: #ecf0f1;
+}
+
+.bunker-menu .menu-item .status {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.bunker-menu .menu-item.selected .status {
+    color: #2ecc71;
+}
+
+.bunker-menu .separator {
+    padding: 8px 15px;
+    color: #7f8c8d;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bunker-menu .confirm-btn {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.bunker-menu .confirm-btn:hover {
+    background: linear-gradient(135deg, #27ae60 0%, #219653 100%);
+}
+
+.bunker-menu .police-badge {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 3px solid #3498db;
+}
+
+.bunker-menu .police-badge .icon {
+    color: #3498db;
+}
